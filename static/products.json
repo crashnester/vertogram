@@ -18,5 +18,20 @@
     "name": "Ла-кри эмульсия",
     "price": 547,
     "imgLink": "/vertogram/static/media/lakri_emul.png"
-  }
+  },
+  {
+    "name": "Гинокомфорт гель",
+    "price": 477,
+    "imgLink": "/vertogram/static/media/ginocomfort.png"
+  },
+  {
+    "name": "Асепта бальзам",
+    "price": 386,
+    "imgLink": "/vertogram/static/media/asepta.png"
+  },
+  {
+    "name": "Ле Санти крем",
+    "price": 1569,
+    "imgLink": "/vertogram/static/media/lesanti.png"
+  },
 ]
