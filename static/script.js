@@ -68,7 +68,7 @@ cartFurtherButton.addEventListener('click', () => {
 })
 
 async function loadItems() {
-    const response = await fetch('/static/foodItems.json');
+    const response = await fetch('/vertogram/static/foodItems.json');
     const items = await response.json();
 
     items.forEach((item, index) => {
