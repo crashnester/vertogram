@@ -28,5 +28,10 @@
     "name": "Асепта бальзам",
     "price": 386,
     "imgLink": "/vertogram/static/media/asepta.png"
+  },
+  {
+    "name": "Ле Санти крем",
+    "price": 1569,
+    "imgLink": "/vertogram/static/media/lesanti.png"
   }
 ]

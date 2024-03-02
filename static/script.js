@@ -12,7 +12,7 @@ configureMainButton({text: 'В корзину', color: '#008000', onclick: mainB
 Telegram.WebApp.MainButton.show();
 
 function mainButtonClickListener() {
-    if (Telegram.WebApp.MainButton.text.toLowerCase() === 'В корзину') {
+    if (Telegram.WebApp.MainButton.text.toLowerCase() === 'в корзину') {
         configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
     } else {
         configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
@@ -185,7 +185,7 @@ function updateTotalPrice() {
     for (const item of cartItems.children) {
         total += parseFoodItemPrice(item.querySelector('.cart-item__price').textContent);
     }
-    cartTotalPrice.textContent = 'Всего товаров: ' + formatter.format(total);
+    cartTotalPrice.textContent = 'Всего: ' + formatter.format(total);
 }
 
 function showRemoveItemButton(foodItem) {
@@ -233,5 +233,5 @@ function decrementFoodItemCount(foodItem) {
 const formatter = new Intl.NumberFormat('ru-RU', {style: 'currency', currency: 'RUB'});
 
 function parseFoodItemPrice(price) {
-    return parseFloat(price.replaceAll(/\$/g, ''));
+    return parseFloat(price.replaceAll(/\s/g, ''));
 }
