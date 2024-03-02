@@ -8,14 +8,14 @@ const cartFurtherButton = document.querySelector('.cart__further');
 
 Telegram.WebApp.ready()
 configureThemeColor(Telegram.WebApp.colorScheme);
-configureMainButton({text: 'view cart', color: '#008000', onclick: mainButtonClickListener});
+configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
 Telegram.WebApp.MainButton.show();
 
 function mainButtonClickListener() {
     if (Telegram.WebApp.MainButton.text.toLowerCase() === 'view cart') {
-        configureMainButton({text: 'close cart', color: '#FF0000', onclick: mainButtonClickListener});
+        configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
     } else {
-        configureMainButton({text: 'view cart', color: '#008000', onclick: mainButtonClickListener});
+        configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
     }
     cart.classList.toggle('active');
 }
@@ -185,7 +185,7 @@ function updateTotalPrice() {
     for (const item of cartItems.children) {
         total += parseFoodItemPrice(item.querySelector('.cart-item__price').textContent);
     }
-    cartTotalPrice.textContent = 'Total: ' + formatter.format(total);
+    cartTotalPrice.textContent = 'Всего товаров: ' + formatter.format(total);
 }
 
 function showRemoveItemButton(foodItem) {
@@ -230,7 +230,7 @@ function decrementFoodItemCount(foodItem) {
     foodItemCountElement.textContent = foodItem.dataset.count;
 }
 
-const formatter = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
+const formatter = new Intl.NumberFormat('ru-RU', {style: 'currency', currency: 'RUB'});
 
 function parseFoodItemPrice(price) {
     return parseFloat(price.replaceAll(/\$/g, ''));

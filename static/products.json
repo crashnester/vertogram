@@ -1,21 +1,21 @@
 [
   {
-    "name": "Alerana 2% sprei",
+    "name": "Алерана спрей",
     "price": 847,
     "imgLink": "/vertogram/static/media/alerana_sprei.png"
   },
   {
-    "name": "Alerana shampoo",
+    "name": "Алерана шампунь",
     "price": 472,
     "imgLink": "/vertogram/static/media/alerana_shampoo.png"
   },
   {
-    "name": "La-Kri Balsam",
+    "name": "Ла-кри бальзам",
     "price": 215,
     "imgLink": "/vertogram/static/media/lakri_balsam.png"
   },
   {
-    "name": "La-Kri emul",
+    "name": "Ла-кри эмульсия",
     "price": 547,
     "imgLink": "/vertogram/static/media/lakri_emul.png"
   }
