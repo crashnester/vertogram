@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Алерана 2% флакон спрей для наружного применения 60 мл",
+    "price": 847,
+    "imgLink": "/vertogram/static/media/alerana_sprei.png"
+  },
+  {
+    "name": "Алерана (alerana) шампунь ежедневный уход для мужчин 250 мл",
+    "price": 472,
+    "imgLink": "/vertogram/static/media/alerana_shampoo.png"
+  },
+  {
+    "name": "Ла-кри бальзам для очень сухой кожи губ восстанавливающий 12 гр",
+    "price": 215,
+    "imgLink": "/vertogram/static/media/lakri_balsam.png"
+  },
+  {
+    "name": "Ла-кри эмульсия 200 мл",
+    "price": 547,
+    "imgLink": "/vertogram/static/media/lakri_emul.png"
+  },
+  {
+    "name": "Гинокомфорт гель моющий для интимной гигиены успокаивающий 200 мл",
+    "price": 477,
+    "imgLink": "/vertogram/static/media/ginocomfort.png"
+  },
+  {
+    "name": "Ла-кри бальзам для очень сухой кожи губ восстанавливающий 12 гр",
+    "price": 215,
+    "imgLink": "/vertogram/static/media/lakri_balsam.png"
+  },
+  {
+    "name": "Алерана (alerana) шампунь ежедневный уход для мужчин 250 мл",
+    "price": 472,
+    "imgLink": "/vertogram/static/media/alerana_shampoo.png"
+  },
+  {
+    "name": "Ла-кри бальзам для очень сухой кожи губ восстанавливающий 12 гр",
+    "price": 215,
+    "imgLink": "/vertogram/static/media/lakri_balsam.png"
+  },
+  {
+    "name": "Ла-кри эмульсия 200 мл",
+    "price": 547,
+    "imgLink": "/vertogram/static/media/lakri_emul.png"
+  },
+]
