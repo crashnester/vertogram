@@ -12,7 +12,7 @@ configureMainButton({text: 'В корзину', color: '#008000', onclick: mainB
 Telegram.WebApp.MainButton.show();
 
 function mainButtonClickListener() {
-    if (Telegram.WebApp.MainButton.text.toLowerCase() === 'view cart') {
+    if (Telegram.WebApp.MainButton.text.toLowerCase() === 'В корзину') {
         configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
     } else {
         configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
