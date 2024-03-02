@@ -13,9 +13,9 @@ Telegram.WebApp.MainButton.show();
 
 function mainButtonClickListener() {
     if (Telegram.WebApp.MainButton.text.toLowerCase() === 'view cart') {
-        configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
+        configureMainButton({text: 'close cart', color: '#FF0000', onclick: mainButtonClickListener});
     } else {
-        configureMainButton({text: 'Посмотреть корзину', color: '#008000', onclick: mainButtonClickListener});
+        configureMainButton({text: 'view cart', color: '#008000', onclick: mainButtonClickListener});
     }
     cart.classList.toggle('active');
 }
@@ -68,7 +68,7 @@ cartFurtherButton.addEventListener('click', () => {
 })
 
 async function loadItems() {
-    const response = await fetch('/vertogram/static/products.json');
+    const response = await fetch('/vertogram/static/foodItems.json');
     const items = await response.json();
 
     items.forEach((item, index) => {
@@ -185,7 +185,7 @@ function updateTotalPrice() {
     for (const item of cartItems.children) {
         total += parseFoodItemPrice(item.querySelector('.cart-item__price').textContent);
     }
-    cartTotalPrice.textContent = 'Всего: ' + formatter.format(total);
+    cartTotalPrice.textContent = 'Total: ' + formatter.format(total);
 }
 
 function showRemoveItemButton(foodItem) {
@@ -230,7 +230,7 @@ function decrementFoodItemCount(foodItem) {
     foodItemCountElement.textContent = foodItem.dataset.count;
 }
 
-const formatter = new Intl.NumberFormat('ru-RU', {style: 'currency', currency: 'RUB'});
+const formatter = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'});
 
 function parseFoodItemPrice(price) {
     return parseFloat(price.replaceAll(/\$/g, ''));
