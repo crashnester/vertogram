@@ -17,7 +17,7 @@ function mainButtonClickListener() {
         foodItems.style.display = 'none';
     } else {
         configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
-        foodItems.style.display = 'block';
+        foodItems.style.display = 'grid';
     }
     cart.classList.toggle('active');
 }
