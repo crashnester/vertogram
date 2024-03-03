@@ -14,10 +14,13 @@ Telegram.WebApp.MainButton.show();
 function mainButtonClickListener() {
     if (Telegram.WebApp.MainButton.text.toLowerCase() === 'в корзину') {
         configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
+        cart.style.display = 'block';
+        cart.classList.toggle('active');
     } else {
         configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
+        cart.style.display = 'none';
+        cart.classList.toggle('active');
     }
-    cart.classList.toggle('active');
 }
 
 function configureMainButton({text, color, textColor = '#ffffff', onclick}) {
@@ -202,7 +205,7 @@ function hideRemoveItemButton(foodItem, cartItem) {
     const foodItemCountElement = foodItem.querySelector('.food-item__count');
 
     addItemButton.style.left = '0';
-    addItemButton.textContent = 'add';
+    addItemButton.textContent = 'Добавить';
     foodItem.removeAttribute('data-count');
     foodItemCountElement.style.opacity = 0;
     cartItem.remove();
