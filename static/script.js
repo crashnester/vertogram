@@ -8,16 +8,16 @@ const cartFurtherButton = document.querySelector('.cart__further');
 
 Telegram.WebApp.ready()
 configureThemeColor(Telegram.WebApp.colorScheme);
-configureMainButton({text: 'В корзину', color: '#0037FFFF', onclick: mainButtonClickListener});
+configureMainButton({text: 'В корзину', color: '#0037ff', onclick: mainButtonClickListener});
 Telegram.WebApp.MainButton.show();
 
 function mainButtonClickListener() {
     cart.classList.toggle('active');
     if (Telegram.WebApp.MainButton.text.toLowerCase() === 'в корзину') {
-        configureMainButton({text: 'Назад', color: '#0037FFFF', onclick: mainButtonClickListener});
+        configureMainButton({text: 'Назад', color: '#0037ff', onclick: mainButtonClickListener});
         foodItems.style.display = 'none';
     } else {
-        configureMainButton({text: 'В корзину', color: '#0037FFFF', onclick: mainButtonClickListener});
+        configureMainButton({text: 'В корзину', color: '#0037ff', onclick: mainButtonClickListener});
         foodItems.style.display = 'grid';
     }
 }
