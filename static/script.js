@@ -14,13 +14,12 @@ Telegram.WebApp.MainButton.show();
 function mainButtonClickListener() {
     if (Telegram.WebApp.MainButton.text.toLowerCase() === 'в корзину') {
         configureMainButton({text: 'Закрыть корзину', color: '#FF0000', onclick: mainButtonClickListener});
-        cart.style.display = 'block';
-        cart.classList.toggle('active');
+        foodItems.style.display = 'none';
     } else {
         configureMainButton({text: 'В корзину', color: '#008000', onclick: mainButtonClickListener});
-        cart.style.display = 'none';
-        cart.classList.toggle('active');
+        foodItems.style.display = 'block';
     }
+    cart.classList.toggle('active');
 }
 
 function configureMainButton({text, color, textColor = '#ffffff', onclick}) {
