@@ -79,7 +79,7 @@ button {
 .food-item__button[data-remove] {
     position: absolute;
     width: 0;
-    background: linear-gradient(#15abe1, #0037ff);
+    background: linear-gradient(90deg, #15abe1, #0037ff);
 }
 
 .food-item__button[data-add] {
@@ -87,7 +87,7 @@ button {
     left: 0;
     right: 0;
     transition: left .3s;
-    background: linear-gradient(#0037ff, #cd15e1);
+    background: linear-gradient(90deg, #6a83de, #b305c7);
 }
 
 .food-item__count {
@@ -147,7 +147,7 @@ button {
 
 .cart__further {
     border: none;
-    background-color: #12a662;
+    background-color: #0037FFFF;
     border-radius: 5px;
     padding: 6px 10px;
     color: white;
@@ -215,11 +215,11 @@ button {
 }
 
 .cart-item__button[data-add] {
-    background: linear-gradient(#15abe1, #0037ff);
+    background: radial-gradient(circle, #6a83de, #b305c7);
 }
 
 .cart-item__button[data-remove] {
-    background: linear-gradient(#0037ff, #cd15e1);
+    background: radial-gradient(circle, #15abe1, #0037ff);
 }
 
 @keyframes fluctuate {
